@@ -37,11 +37,11 @@ function testTheMap (map) {
     }
 
     function loadTiles() {
-      var tileImageFiles = [];
+      var tileBackgroundFiles = [];
       for (var tile in map.tiles) {
-        tileImageFiles.push(map.tiles[tile].file);
+        tileBackgroundFiles.push(map.tiles[tile].background);
       }
-      loadImages(tileImageFiles, function (images) {
+      loadImages(tileBackgroundFiles, function (images) {
         // draw the images
         var toDraw = map.midground;
         var tiles = map.tiles;
@@ -50,7 +50,7 @@ function testTheMap (map) {
 
         for (var i = 0; i < toDraw.length; i++) {
           name = toDraw[i][0];
-          img = images[tiles[name].file];
+          img = images[tiles[name].background];
           x = toDraw[i][1][0];
           y = toDraw[i][1][1];
           w = tiles[name].width;

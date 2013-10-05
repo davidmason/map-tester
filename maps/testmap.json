@@ -2,7 +2,7 @@
   "name": "First Level!",
   "tiles" : {
     "leaves": {
-      "file": "images/Leaves.png",
+      "background": "images/Leaves.png",
       "width": 130,
       "height": 130,
       "bounds": {
@@ -13,12 +13,12 @@
       }
     },
     "bark": {
-      "file": "images/Bark.png",
+      "background": "images/Bark.png",
       "width": 130,
       "height": 130
     },
     "dirt": {
-      "file": "images/dirtCentre.png",
+      "background": "images/dirtCentre.png",
       "width": 240,
       "height": 199
     }
