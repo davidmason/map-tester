@@ -1,0 +1,24 @@
+{
+  "name": "map-tester",
+  "version": "0.0.0",
+  "description": "Display background, tiles and foreground based on json config.",
+  "main": "map-tester.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "browserify map-tester.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/davidmason/spritesheet-tester.git"
+  },
+  "dependencies": {
+    "image-batch-loader": "git://github.com/davidmason/image-batch-loader.git"
+  },
+  "devDependencies": {
+    "browserify": "~2.25.0"
+  },
+  "author": "github.com/davidmason",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "d66f43f6cda54d6941ee678586d2d6209fb9c122"
+}
