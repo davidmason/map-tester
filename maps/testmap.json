@@ -1,19 +1,20 @@
 {
   "name": "First Level!",
   "tiles" : {
-    "grass": {
-      "file": "images/tiles/grass.png",
+    "leaves": {
+      "file": "images/Leaves.png",
       "width": 100,
-      "height": 100
+      "height": 100,
+      "bounds": {
+        "top": 15,
+        "left": 15,
+        "width": 70,
+        "height": 70
+      }
     },
-    "dirt": {
-      "file": "images/tiles/dirt.png",
+    "bark": {
+      "file": "images/Bark.png",
       "width": 100,
-      "height": 100
-    },
-    "bigdirt": {
-      "file": "images/tiles/bigdirt.png",
-      "width": 200,
       "height": 100
     }
   },
@@ -25,12 +26,13 @@
   },
 
   "midground": [
-    ["grass", [0, 1000]],
-    ["grass", [100, 1000]],
-    ["grass", [200, 1000]],
-    ["grass", [300, 1000]],
-    ["grass", [400, 1000]],
-    ["grass", [500, 1000]]
+    ["bark", [866, 906]],
+    ["bark", [866, 784]],
+    ["bark", [866, 662]],
+    ["bark", [866, 532]],
+    ["leaves", [857, 420]],
+    ["leaves", [738, 420]],
+    ["leaves", [984, 420]]
   ]
 
 }

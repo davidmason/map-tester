@@ -12,7 +12,9 @@
     "url": "git://github.com/davidmason/spritesheet-tester.git"
   },
   "dependencies": {
-    "image-batch-loader": "git://github.com/davidmason/image-batch-loader.git"
+    "image-batch-loader": "git://github.com/davidmason/image-batch-loader.git",
+    "crtrdg-gameloop": "0.0.5",
+    "crtrdg-mouse": "0.0.3"
   },
   "devDependencies": {
     "browserify": "~2.25.0"

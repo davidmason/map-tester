@@ -1,4 +1,9 @@
-var loadImages = require('image-batch-loader');
+var loadImages = require('image-batch-loader'),
+    Game = require('crtrdg-gameloop'),
+    Mouse = require('crtrdg-mouse');
+
+var canvas = document.getElementById('main-canvas');
+var context = canvas.getContext('2d');
 
 var mapFile = function () {
   return window.location.search.split("=")[1];
@@ -14,9 +19,8 @@ $.getJSON(mapFile())
 function testTheMap (map) {
   document.getElementById('title').innerText = map.name;
   
-  var canvas = document.getElementById('main-canvas');
   if (canvas.getContext) {
-    drawMapInContext(canvas.getContext('2d'));
+    drawMapInContext(context);
   } else {
     console.log("Canvas not supported.")
   }
@@ -24,9 +28,6 @@ function testTheMap (map) {
   function drawMapInContext(context) {
 
     loadImageThenAction(map.background.file, drawBackground());
-
-    // then load and draw the next part
-
 
     function drawBackground() {
       return function (image) {
@@ -36,57 +37,27 @@ function testTheMap (map) {
     }
 
     function loadTiles() {
-      // this is just about getting all the tiles loaded
-      loadImages(['images/leaves.png', 'images/bark.png'], function (images) {
-        var leaves = images['images/leaves.png'],
-            bark = images['images/bark.png'];
+      var tileImageFiles = [];
+      for (var tile in map.tiles) {
+        tileImageFiles.push(map.tiles[tile].file);
+      }
+      loadImages(tileImageFiles, function (images) {
+        // draw the images
+        var toDraw = map.midground;
+        var tiles = map.tiles;
+        var name, x, y, img;
 
-        // do something with cat and mouse image
+        for (var i = 0; i < toDraw.length; i++) {
+          name = toDraw[i][0];
+          img = images[tiles[name].file];
+          x = toDraw[i][1][0];
+          y = toDraw[i][1][1];
+
+          context.drawImage(img, x, y);
+        }
+
       });
     }
-
-
-    //     var baseSprite = sprite(image);
-    //     var configuredSprite = baseSprite(entity.sprite.width, entity.sprite.height);
-
-    //     var position = 10;
-    //     context.font = "28px Helvetica";
-    //     context.textAlign = "center";
-
-    //     for (var animation in entity.sprite.animations) {
-    //       drawAnimationAtPosition(animation, position);
-    //       position = position + 10 + entity.width;
-    //     }
-
-    //     function drawAnimationAtPosition (animation, horizontalOffset) {
-    //       context.fillText(animation, horizontalOffset + entity.width / 2, entity.height + 40);
-    //       var positioned = configuredSprite(horizontalOffset, 10, entity.width, entity.height);
-    //       blitFrameForever(positioned, entity.sprite.animations[animation], 0, horizontalOffset);
-    //     }
-
-    //     function blitFrameForever (blitFunction, animation, index, offset) {
-    //       context.clearRect(offset, 10, entity.width, entity.height);
-    //       var correctIndex = index % animation.length;
-    //       var frame = animation[correctIndex];
-    //       var col = frame[0], row = frame[1];
-    //       blitFunction(col, row);
-    //       var delay = frame[2] || 100;
-    //       setTimeout(function () {
-    //         blitFrameForever(blitFunction, animation, correctIndex + 1, offset);
-    //       }, delay);
-    //     }
-
-    // function sprite (image) {
-    //   return function (srcWidth, srcHeight) {
-    //     return function (x, y, w, h) {
-    //       return function (col, row) {
-    //         context.drawImage(image,
-    //           col * srcWidth, row * srcHeight, srcWidth, srcHeight,
-    //           x, y, w, h);
-    //       }
-    //     }
-    //   }
-    // }
 
     function loadImageThenAction (imageFile, action) {
       var img = new Image();
@@ -95,7 +66,32 @@ function testTheMap (map) {
       }, false);
       img.src = imageFile;
     }
-
   }
-
 }
+
+var game = new Game({
+  canvas: 'main-canvas',
+  width: 4000,
+  height: 1200,
+  backgroundColor: 'rgba(0,0,0,0)'
+});
+
+var markerSize = 10;
+
+var mouse = new Mouse(game);
+mouse.on('click', function(location){
+  var x = location.x - markerSize / 2,
+      y = location.y - markerSize / 2,
+      w = h = markerSize;
+  context.fillStyle = '#333';
+  context.strokeStyle = '#aaa';
+  context.fillRect(x, y, w, h);
+  context.strokeRect(x, y, w, h);
+
+  context.font = "25px Helvetica";
+  context.textAlign = "center";
+
+  var text = "(" + location.x + ", " + location.y + ")";
+  context.fillText(text, location.x, location.y - 15 );
+  context.strokeText(text, location.x, location.y - 15 );
+});
