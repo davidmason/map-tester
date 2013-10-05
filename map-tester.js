@@ -45,18 +45,44 @@ function testTheMap (map) {
         // draw the images
         var toDraw = map.midground;
         var tiles = map.tiles;
-        var name, x, y, img;
+        var boundsPainters = [];
+        var name, x, y, w, h, img, bounds;
 
         for (var i = 0; i < toDraw.length; i++) {
           name = toDraw[i][0];
           img = images[tiles[name].file];
           x = toDraw[i][1][0];
           y = toDraw[i][1][1];
+          w = tiles[name].width;
+          h = tiles[name].height;
 
-          context.drawImage(img, x, y);
+          context.drawImage(img, x, y, w, h);
+
+          if (tiles[name].bounds) {
+            bounds = tiles[name].bounds;
+            boundsPainters.push(
+              prepareBounds(x + bounds.x, y + bounds.y,
+                            bounds.width, bounds.height)
+            );
+          } else {
+            boundsPainters.push(prepareBounds(x, y, w, h));
+          }
+
         }
 
+        for (i = 0; i < boundsPainters.length; i++) {
+          boundsPainters[i]();
+        }
       });
+    }
+
+    function prepareBounds (x, y, w, h) {
+      return function () {
+        context.fillStyle = "rgba(40, 80, 160, 0.5)";
+        context.fillRect(x, y, w, h);
+        context.strokeStyle = "rgba(40, 80, 160, 0.8)";
+        context.strokeRect(x, y, w, h);
+      }
     }
 
     function loadImageThenAction (imageFile, action) {

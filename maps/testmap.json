@@ -3,19 +3,24 @@
   "tiles" : {
     "leaves": {
       "file": "images/Leaves.png",
-      "width": 100,
-      "height": 100,
+      "width": 130,
+      "height": 130,
       "bounds": {
-        "top": 15,
-        "left": 15,
-        "width": 70,
-        "height": 70
+        "x": 15,
+        "y": 15,
+        "width": 100,
+        "height": 100
       }
     },
     "bark": {
       "file": "images/Bark.png",
-      "width": 100,
-      "height": 100
+      "width": 130,
+      "height": 130
+    },
+    "dirt": {
+      "file": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199
     }
   },
 
@@ -32,7 +37,12 @@
     ["bark", [866, 532]],
     ["leaves", [857, 420]],
     ["leaves", [738, 420]],
-    ["leaves", [984, 420]]
+    ["leaves", [984, 420]],
+    ["dirt", [0, 1035]],
+    ["dirt", [240, 1035]],
+    ["dirt", [480, 1035]],
+    ["dirt", [720, 1035]],
+    ["dirt", [960, 1035]]
   ]
 
 }
