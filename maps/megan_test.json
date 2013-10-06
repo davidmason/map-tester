@@ -1,0 +1,137 @@
+{
+  "name": "First Level!",
+  "tiles" : {
+    "leaves": {
+      "background": "images/Leaves.png",
+      "width": 130,
+      "height": 130,
+      "bounds": {
+        "x": 15,
+        "y": 15,
+        "width": 100,
+        "height": 100
+      }
+    },
+    "bark": {
+      "background": "images/Bark.png",
+      "width": 130,
+      "height": 130
+    },
+	"ame_grass": {
+      "background": "images/grass.png",
+      "width": 120,
+      "height": 100, 
+	  "bounds": {
+        "x": 0,
+        "y": 90,
+        "width": 120,
+        "height": 10
+      }
+    },    
+	"dirt": {
+      "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199
+    }, 
+	"ame_rockSmall": {
+      "background": "images/dirtRock.png",
+      "width": 75,
+      "height": 100,
+	  "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 75,
+        "height": 80
+      }	  
+    }, 
+	"ame_rockLong": {
+      "background": "images/dirtRock.png",
+      "width": 200,
+      "height": 75, 
+	  "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 200,
+        "height": 60
+      }	   
+	}, 
+	"ame_rockHuge": {
+      "background": "images/dirtRock.png",
+      "width": 600,
+      "height": 100, 
+	  "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 600,
+        "height": 100
+      }	  
+    },
+	"ame_tunnel": {
+      "background": "images/dirtDugOutCentre.png",
+      "width": 240,
+      "height": 199, 
+	  "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  },
+
+  "background": {
+    "file": "images/grass.png",
+    "top": 0,
+    "left": 0
+  },
+
+  "midground": [
+	["ame_tunnel", [3119, 378]],
+	["ame_tunnel", [3119, 574]],
+	["ame_tunnel", [3119, 771]],
+	["ame_tunnel", [3355, 574]],
+	["ame_tunnel", [3355, 771]],
+	["ame_tunnel", [3595, 574]],
+	["ame_tunnel", [3775, 500]],
+	["ame_tunnel", [3592, 770]],
+	["ame_tunnel", [3829, 576]],
+	["ame_tunnel", [3832, 769]],
+	["ame_tunnel", [3120, 969]],
+	["ame_tunnel", [3351, 965]],
+	["ame_tunnel", [3590, 968]],
+	["ame_tunnel", [2881, 695]],
+	["ame_tunnel", [2881, 892]],
+	["ame_tunnel", [3826, 965]],
+	["ame_tunnel", [2881, 1080]],
+	["ame_rockSmall", [3085, 419]], 
+	["ame_rockSmall", [3270, 500]], 
+	["ame_rockSmall", [3948, 450]],
+	["ame_grass", [2880, 200]],
+	["ame_grass", [3000, 200]],
+	["ame_grass", [3300, 278]],
+	["ame_grass", [3418, 278]],
+    ["ame_grass", [3538, 278]],
+	["ame_grass", [3658, 278]],
+	["ame_grass", [3960, 400]],
+	["dirt", [2880, 300]], 
+	["dirt", [3301, 378]],
+	["dirt", [2880, 1000]],
+	["dirt", [2880, 499]],
+	["dirt", [3120, 1150]],
+	["dirt", [3360, 1150]],
+	["dirt", [3600, 1150]],
+	["dirt", [3840, 1150]],
+	["dirt", [3539, 378]], 
+	["dirt", [3961, 500]],
+	["dirt", [3961, 699]], 
+	["dirt", [3961, 898]], 
+	["dirt", [3961, 1097]], 
+	["ame_rockSmall", [3250, 663]], 
+	["ame_rockSmall", [3830, 660]], 
+	["ame_rockSmall", [3220, 1000]], 
+	["ame_rockSmall", [3765, 760]],
+	["ame_rockLong", [3000, 848]], 
+	["ame_rockHuge", [3300, 900]]
+  ]
+
+}
