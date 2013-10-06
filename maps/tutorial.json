@@ -195,7 +195,12 @@
     ["bottomBranch", [1120, 695]],
     ["bottomBranch", [1150, 695]],
     ["bottomBranch", [1180, 695]],
-    ["clearLeaves", [1000, 685]],
+    ["clearLeaves", [1020, 685]],
+    ["clearLeaves", [1050, 665]],
+    ["clearLeaves", [1050, 695]],
+    ["clearLeaves", [1080, 665]],
+    ["clearLeaves", [1080, 695]],
+    ["clearLeaves", [1110, 685]],
 
     ["topBranch", [1060, 500]],
     ["topBranch", [1090, 500]],
@@ -207,7 +212,12 @@
     ["bottomBranch", [1120, 505]],
     ["bottomBranch", [1150, 505]],
     ["bottomBranch", [1180, 505]],
-    ["clearLeaves", [1000, 490]],
+    ["clearLeaves", [980, 490]],
+    ["clearLeaves", [1000, 460]],
+    ["clearLeaves", [1000, 510]],
+    ["clearLeaves", [1030, 475]],
+    ["clearLeaves", [1030, 500]],
+    ["clearLeaves", [1040, 490]],
 
 
 
@@ -219,7 +229,10 @@
     ["bottomBranch", [1330, 805]],
     ["bottomBranch", [1360, 805]],
     ["bottomBranch", [1390, 805]],
-    ["clearLeaves", [1380, 770]],
+    ["clearLeaves", [1380, 780]],
+    ["clearLeaves", [1400, 775]],
+    ["clearLeaves", [1400, 795]],
+    ["clearLeaves", [1420, 780]],
 
     ["topBranch", [1330, 620]],
     ["topBranch", [1360, 620]],
@@ -231,7 +244,12 @@
     ["bottomBranch", [1390, 625]],
     ["bottomBranch", [1420, 625]],
     ["bottomBranch", [1400, 625]],
+    ["clearLeaves", [1460, 600]],
+    ["clearLeaves", [1380, 600]],
+    ["clearLeaves", [1400, 630]],
     ["clearLeaves", [1400, 600]],
+    ["clearLeaves", [1430, 635]],
+    ["clearLeaves", [1430, 610]],
 
 
     ["topBranch", [1330, 400]],
@@ -239,12 +257,25 @@
     ["topBranch", [1390, 400]],
     ["topBranch", [1420, 400]],
     ["topBranch", [1450, 400]],
+    ["topBranch", [1480, 400]],
     ["bottomBranch", [1330, 410]],
     ["bottomBranch", [1360, 410]],
     ["bottomBranch", [1390, 410]],
     ["bottomBranch", [1420, 410]],
     ["bottomBranch", [1450, 410]],
-    ["clearLeaves", [1450, 380]]
+    ["bottomBranch", [1480, 410]],
+    ["clearLeaves", [1400, 390]],
+    ["clearLeaves", [1400, 400]],
+    ["clearLeaves", [1430, 390]],
+    ["clearLeaves", [1430, 400]],
+    ["clearLeaves", [1460, 390]],
+    ["clearLeaves", [1460, 400]],
+    ["clearLeaves", [1490, 360]],
+    ["clearLeaves", [1490, 390]],
+    ["clearLeaves", [1490, 420]],
+    ["clearLeaves", [1520, 375]],
+    ["clearLeaves", [1520, 405]],
+    ["clearLeaves", [1550, 385]]
   ]
 
 }
