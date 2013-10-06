@@ -12,6 +12,17 @@
         "height": 100
       }
     },
+    "clearLeaves": {
+      "background": "images/leavesTransparent.png",
+      "width": 50,
+      "height": 50,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
     "bark": {
       "background": "images/Bark.png",
       "width": 130,
@@ -28,9 +39,9 @@
       "width": 30,
       "height": 30,
       "bounds": {
-        "x": 5,
+        "x": 0,
         "y": 5,
-        "width": 25,
+        "width": 30,
         "height": 20
       }
     },
@@ -39,9 +50,9 @@
       "width": 30,
       "height": 30,
       "bounds": {
-        "x": 5,
+        "x": 0,
         "y": 5,
-        "width": 25,
+        "width": 30,
         "height": 20
       }
     },
@@ -166,23 +177,74 @@
     ["dirt", [1400, 900]],
     ["dirt", [1600, 825]],
     ["dirt", [1700, 800]],
-    ["dirt", [1750, 400]],
+    ["dirt", [1750, 500]],
     ["dirt", [1750, 600]],
     ["dirt", [1750, 800]],
     ["dirt", [1750, 900]],
 
 
-    ["topBranch", [1330, 430]],
-    ["topBranch", [1360, 430]],
-    ["topBranch", [1390, 430]],
-    ["topBranch", [1420, 430]],
-    ["topBranch", [1450, 430]],
-    ["bottomBranch", [1330, 440]],
-    ["bottomBranch", [1360, 440]],
-    ["bottomBranch", [1390, 440]],
-    ["bottomBranch", [1420, 440]],
-    ["bottomBranch", [1450, 440]],
-    ["leaves", [1450, 400]]
+
+
+
+
+    ["topBranch", [1090, 690]],
+    ["topBranch", [1120, 690]],
+    ["topBranch", [1150, 690]],
+    ["topBranch", [1180, 690]],
+    ["bottomBranch", [1090, 695]],
+    ["bottomBranch", [1120, 695]],
+    ["bottomBranch", [1150, 695]],
+    ["bottomBranch", [1180, 695]],
+    ["clearLeaves", [1000, 685]],
+
+    ["topBranch", [1060, 500]],
+    ["topBranch", [1090, 500]],
+    ["topBranch", [1120, 500]],
+    ["topBranch", [1150, 500]],
+    ["topBranch", [1180, 500]],
+    ["bottomBranch", [1060, 505]],
+    ["bottomBranch", [1090, 505]],
+    ["bottomBranch", [1120, 505]],
+    ["bottomBranch", [1150, 505]],
+    ["bottomBranch", [1180, 505]],
+    ["clearLeaves", [1000, 490]],
+
+
+
+
+
+    ["topBranch", [1330, 800]],
+    ["topBranch", [1360, 800]],
+    ["topBranch", [1390, 800]],
+    ["bottomBranch", [1330, 805]],
+    ["bottomBranch", [1360, 805]],
+    ["bottomBranch", [1390, 805]],
+    ["clearLeaves", [1380, 770]],
+
+    ["topBranch", [1330, 620]],
+    ["topBranch", [1360, 620]],
+    ["topBranch", [1390, 620]],
+    ["topBranch", [1420, 620]],
+    ["topBranch", [1400, 620]],
+    ["bottomBranch", [1330, 625]],
+    ["bottomBranch", [1360, 625]],
+    ["bottomBranch", [1390, 625]],
+    ["bottomBranch", [1420, 625]],
+    ["bottomBranch", [1400, 625]],
+    ["clearLeaves", [1400, 600]],
+
+
+    ["topBranch", [1330, 400]],
+    ["topBranch", [1360, 400]],
+    ["topBranch", [1390, 400]],
+    ["topBranch", [1420, 400]],
+    ["topBranch", [1450, 400]],
+    ["bottomBranch", [1330, 410]],
+    ["bottomBranch", [1360, 410]],
+    ["bottomBranch", [1390, 410]],
+    ["bottomBranch", [1420, 410]],
+    ["bottomBranch", [1450, 410]],
+    ["clearLeaves", [1450, 380]]
   ]
 
 }
