@@ -1,0 +1,254 @@
+{
+  "name": "First Level!",
+  "tiles" : {
+    "leaves": {
+      "background": "images/Leaves.png",
+      "width": 130,
+      "height": 130,
+      "bounds": {
+        "x": 15,
+        "y": 15,
+        "width": 100,
+        "height": 100
+      }
+    },
+    "bark": {
+      "background": "images/Bark.png",
+      "width": 130,
+      "height": 130
+    },
+    "dirt": {
+      "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199
+    },
+	
+	"dirt1": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 179,
+        "height": 199
+		}
+	  
+	},
+	
+	"dirt2": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 172,
+        "y": 0,
+        "width": 18,
+        "height": 119
+		}
+	  
+	},
+	"dirt3": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 171,
+        "y": 0,
+        "width": 69,
+        "height": 104
+		}
+	  
+	},
+	"dirt4": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 107,
+        "height": 69
+		}
+	  
+	},
+	"dirt5": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 57,
+        "height": 118
+		}
+	  
+	},
+	"dirt6": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 34,
+        "y": 0,
+        "width": 206,
+        "height": 199
+		}
+	  
+	},
+	"dirt7": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 196,
+        "height": 135
+		}
+	  
+	},
+	"dirt8": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 102,
+        "height": 114
+		}
+	  
+	},
+	"dirt9": {
+	  "background": "images/dirtCentre.png",
+      "width": 240,
+      "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 67
+		}
+	  
+	},
+	
+	"rockSmall": {
+      "background": "images/dirtRock.png",
+      "width": 75,
+      "height": 100,
+	  "bounds": {
+        "x": 0,
+        "y": 20,
+        "width": 75,
+        "height": 80
+      }	  
+    },
+	
+	
+	
+	
+	"water": {
+	  "background": "images/water.png",
+	  "width": 107,
+	  "height": 89,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+		}
+	},
+	"dug": {
+	  "background": "images/dirtDugOutCentre.png",
+	  "width": 240,
+	  "height": 199,
+	  "bounds": {
+		"x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+	  }
+	  
+	}
+  },
+
+  "background": {
+    "file": "images/water.png",
+    "top": 0,
+    "left": 0
+  },
+
+  "midground": [
+    ["dirt", [2881, 278]],	
+	["dirt", [2641, 278]],
+	["dirt5", [2584, 367]],
+	["dirt3", [2237, 367]],
+	["dirt2", [2237, 278]],
+	["dirt1", [1990, 278]],
+	["dirt", [1971, 476]],
+	["dirt", [2015, 595]],
+	["dirt", [2056, 671]],
+	["dirt", [2149, 717]],
+	["dirt8", [2536, 685]],
+	["dirt7", [2389, 717]],
+	["dirt4", [2477, 417]],
+	["dirt", [2881, 477]],
+	["dirt6", [2824, 477]],
+	["dirt9", [2629, 633]],
+	["dirt", [2259, 807]],
+	["dirt", [1750, 278]],
+	["dirt", [1750, 477]],
+	["dirt", [1750, 676]],
+	["dirt", [1750, 875]],
+	["dirt", [1750, 1074]],
+	["dirt", [1991, 676]],
+	["dirt", [1991, 875]],
+	["dirt", [1991, 1074]],
+	["dirt", [2019, 807]],
+	["dirt", [2682, 1051]],
+	["dirt", [2738, 998]],
+	["dirt", [2825, 896]],
+	
+	
+	["dug", [2169, 278]],
+	["dug", [2211, 397]],
+	["dug", [2255, 472]],
+	["dug", [2296, 518]],	
+	["dug", [2389, 487]],	
+	["dug", [2617, 435]],
+	
+	
+	
+	
+	["dug", [2640, 698]],
+	["dug", [2585, 799]],
+	["dug", [2498, 853]],
+	["dug", [2442, 1006]],
+	["dug", [2202, 1006]],
+	
+	
+	
+	["water", [2477, 328]],
+	["water", [2534, 278]],
+	["water", [2427, 278]],
+	
+	
+	["rockSmall", [2571, 1111]],
+	["rockSmall", [2294, 330]]
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  ]
+
+}
