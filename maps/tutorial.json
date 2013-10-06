@@ -23,6 +23,28 @@
         "height": 0
       }
     },
+    "bottomBranch": {
+      "background": "images/barkBottomTransparent.png",
+      "width": 30,
+      "height": 30,
+      "bounds": {
+        "x": 5,
+        "y": 5,
+        "width": 25,
+        "height": 20
+      }
+    },
+    "topBranch": {
+      "background": "images/barkTopTransparent.png",
+      "width": 30,
+      "height": 30,
+      "bounds": {
+        "x": 5,
+        "y": 5,
+        "width": 25,
+        "height": 20
+      }
+    },
     "grass": {
       "background": "images/grass.png",
       "width": 120,
@@ -147,7 +169,20 @@
     ["dirt", [1750, 400]],
     ["dirt", [1750, 600]],
     ["dirt", [1750, 800]],
-    ["dirt", [1750, 900]]
+    ["dirt", [1750, 900]],
+
+
+    ["topBranch", [1330, 430]],
+    ["topBranch", [1360, 430]],
+    ["topBranch", [1390, 430]],
+    ["topBranch", [1420, 430]],
+    ["topBranch", [1450, 430]],
+    ["bottomBranch", [1330, 440]],
+    ["bottomBranch", [1360, 440]],
+    ["bottomBranch", [1390, 440]],
+    ["bottomBranch", [1420, 440]],
+    ["bottomBranch", [1450, 440]],
+    ["leaves", [1450, 400]]
   ]
 
 }
